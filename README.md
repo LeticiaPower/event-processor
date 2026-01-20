@@ -91,6 +91,7 @@
     - DynamoDB
 - Kafka (confluent-kafka)
 - Docker
+- Make
 
 ## HOW TO RUN
 
@@ -105,7 +106,7 @@
 	- tables are created
 	- consumer starts listening
 
-## other terminal
+### other terminal
 
 - make run-producer
 	- will send one hardcoded eventMessage to the topic with a new id and ts each time is executed
