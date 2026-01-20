@@ -1,5 +1,17 @@
 # EVENT PROCESSOR
 
+<img width="1094" height="944" alt="image" src="https://github.com/user-attachments/assets/95ae7e10-a1af-46f6-b24e-3226c519005f" />
+
+## STACK
+
+- Go
+- LocalStack
+  - AWS
+    - DynamoDB
+- Kafka (confluent-kafka)
+- Docker
+- Make
+
 ## KEY FUNCTIONALITIES
 
 ### PRODUCER
@@ -82,17 +94,6 @@
 - save in case of success (status=SAVED) or in case of errors (status=FAILED)  
 - use the eventLog struct  
 
-
-## STACK
-
-- Go
-- LocalStack
-  - AWS
-    - DynamoDB
-- Kafka (confluent-kafka)
-- Docker
-- Make
-
 ## HOW TO RUN
 
 - make build
@@ -106,7 +107,7 @@
 	- tables are created
 	- consumer starts listening
 
-### other terminal
+### in other terminal
 
 - make run-producer
 	- will send one hardcoded eventMessage to the topic with a new id and ts each time is executed
